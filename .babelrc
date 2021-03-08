@@ -1,0 +1,25 @@
+{
+    "presets": [
+      ["es2015", { "modules": false }],
+      "stage-0",
+      "react"
+    ],
+    "plugins": [
+      ["direct-import", ["@material-ui/core", "@material-ui/icons"], "babel-plugin-transform-object-rest-spread"]
+    ],
+    "env": {
+      "development": {
+        "plugins": []
+      },
+      "test": {
+        "plugins": [
+          "transform-es2015-modules-commonjs",
+          "transform-html-import-to-string"
+        ]
+      },
+      "production": {
+        "plugins": []
+      }
+    }
+  }
+  
